@@ -1,0 +1,22 @@
+.styleMovieGrid {
+    /* Para poner en Grid */
+    display: grid;
+
+    /* Para colocar el grid en columnas */
+    grid-template-columns: repeat( auto-fill, 230px );
+
+    /* Para separar entre las columnas */
+    gap: 40px;
+
+    /* Para colocar espacios hacia adentro del Grid */
+    padding: 40px;  
+
+    /* Para centrar el contenido */
+    justify-content: center;
+}
+
+@media (max-width: 375px) {
+    .styleMovieGrid {
+        grid-template-columns: 100%;
+    }
+}
