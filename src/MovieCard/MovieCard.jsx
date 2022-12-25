@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import './MovieCard.css'; 
+import placeHolder from '../Images/PlaceHolder.webp'; 
 
 export  const MovieCard = ( { movie } )=> {
-    const imagenURL = "https://image.tmdb.org/t/p/w300" + movie.poster_path ; 
+    const imagenURL = movie.poster_path ? "https://image.tmdb.org/t/p/w300" + movie.poster_path : placeHolder;   
 
     return (
         <li className="movieCard" >
